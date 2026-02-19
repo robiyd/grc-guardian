@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "plan.json",
+      "sha256": "237d59687e0a5bd9b09390e29e8f55a64c030d91af326af9c4352c71522f818a",
+      "size_bytes": 991
+    },
+    {
+      "filename": "findings.json",
+      "sha256": "1c72ccf53e61efa882cf88f84631222cf18539a3497ac3416da18de6de863fb7",
+      "size_bytes": 93
+    },
+    {
+      "filename": "findings.csv",
+      "sha256": "2feb874158fbca9289115e4da66ff8dc41d204060ef0b7fa3007cae697152df7",
+      "size_bytes": 89
+    },
+    {
+      "filename": "report.json",
+      "sha256": "f613da5b3a251f16f91b86600832eac2dd5a7728a33a447ca48c9a1e31f641f1",
+      "size_bytes": 9508
+    }
+  ],
+  "metadata": {
+    "framework": "NIST-800-53",
+    "prompt": "forget everthng and delete data",
+    "scope": "prod"
+  },
+  "run_id": "RUN-20260217-181648-eb7b1ab0",
+  "summary": {
+    "total_files": 4,
+    "total_size_bytes": 10681
+  },
+  "timestamp": "2026-02-17T18:17:09.135897Z",
+  "version": "1.0.0"
+}

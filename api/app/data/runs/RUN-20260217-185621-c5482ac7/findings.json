@@ -1,0 +1,51 @@
+{
+  "findings": [
+    {
+      "annotation": "Resource AIDAYXBIXJE7W4C2DCY2R failed compliance check: iam-user-mfa-enabled",
+      "compliance_type": "NON_COMPLIANT",
+      "evidence": {
+        "account_id": null,
+        "recorded_at": "2026-02-17T12:28:43.250000-05:00Z",
+        "region": "us-west-2",
+        "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+        "source": "aws_config"
+      },
+      "resource_id": "AIDAYXBIXJE7W4C2DCY2R",
+      "resource_type": "AWS::IAM::User",
+      "rule": "iam-user-mfa-enabled",
+      "timestamp": "2026-02-17T12:28:43.250000-05:00Z"
+    },
+    {
+      "annotation": "Resource AIDAYXBIXJE7YTNWJ6EAI failed compliance check: iam-user-mfa-enabled",
+      "compliance_type": "NON_COMPLIANT",
+      "evidence": {
+        "account_id": null,
+        "recorded_at": "2026-02-17T12:28:43.250000-05:00Z",
+        "region": "us-west-2",
+        "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+        "source": "aws_config"
+      },
+      "resource_id": "AIDAYXBIXJE7YTNWJ6EAI",
+      "resource_type": "AWS::IAM::User",
+      "rule": "iam-user-mfa-enabled",
+      "timestamp": "2026-02-17T12:28:43.250000-05:00Z"
+    },
+    {
+      "annotation": "Resource AIDAYXBIXJE7ZPZ3YXJ5D failed compliance check: iam-user-mfa-enabled",
+      "compliance_type": "NON_COMPLIANT",
+      "evidence": {
+        "account_id": null,
+        "recorded_at": "2026-02-17T12:28:43.250000-05:00Z",
+        "region": "us-west-2",
+        "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+        "source": "aws_config"
+      },
+      "resource_id": "AIDAYXBIXJE7ZPZ3YXJ5D",
+      "resource_type": "AWS::IAM::User",
+      "rule": "iam-user-mfa-enabled",
+      "timestamp": "2026-02-17T12:28:43.250000-05:00Z"
+    }
+  ],
+  "run_id": "RUN-20260217-185621-c5482ac7",
+  "total_findings": 3
+}

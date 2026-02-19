@@ -1,0 +1,180 @@
+{
+  "compliant_count": 0,
+  "execution": {
+    "all_findings": [],
+    "citations": [
+      {
+        "excerpt": "Organizations must:\n- Determine which events require auditing on the system\n- Coordinate security audit function with other organizational entities\n- Provide rationale for why auditable events are deemed adequate\n- Review and update audited events periodically\n- Audit events related to successful/unsuccessful account access, account management, object access, policy changes, privilege functions, and system-level events",
+        "framework": "NIST 800-53 Rev 5",
+        "id": "NIST 800-53 Rev 5:AU-2",
+        "metadata": {
+          "aws_config_rules": [
+            "cloudtrail-enabled",
+            "cloud-trail-log-file-validation-enabled",
+            "s3-bucket-logging-enabled",
+            "cloudwatch-alarm-action-check"
+          ],
+          "control_id": "AU-2",
+          "framework": "NIST 800-53 Rev 5",
+          "keywords": [
+            "audit events",
+            "logging",
+            "CloudTrail",
+            "monitoring",
+            "audit trail",
+            "event logging",
+            "security logs",
+            "compliance logging",
+            "forensics",
+            "accountability"
+          ],
+          "summary": "Organizations must:\n- Determine which events require auditing on the system\n- Coordinate security audit function with other organizational entities\n- Provide rationale for why auditable events are deemed adequate\n- Review and update audited events periodically\n- Audit events related to successful/unsuccessful account access, account management, object access, policy changes, privilege functions, and system-level events"
+        },
+        "relevance_score": 3.0,
+        "source_path": "rag\\data\\controls\\NIST-800-53-AU-2.md"
+      },
+      {
+        "excerpt": "Rules to control physical and logical access to information and other associated assets shall be established and implemented based on business and information security requirements. This includes:\n- Access control policy covering all types of access\n- Rights of access based on need-to-use principle\n- Procedures for granting, reviewing, and revoking access rights\n- Documentation of access rights for each user and asset\n- Regular review of access rights (at least annually)\n- Removal of access...",
+        "framework": "ISO/IEC 27001:2022",
+        "id": "ISO/IEC 27001:2022:A.5.15",
+        "metadata": {
+          "aws_config_rules": [
+            "iam-user-mfa-enabled",
+            "iam-user-no-policies-check",
+            "access-keys-rotated",
+            "s3-bucket-public-read-prohibited",
+            "s3-bucket-server-side-encryption-enabled"
+          ],
+          "control_id": "A.5.15",
+          "framework": "ISO/IEC 27001:2022",
+          "keywords": [
+            "ISO27001",
+            "access control",
+            "need-to-use",
+            "least privilege",
+            "identity management",
+            "access rights",
+            "permission management",
+            "authorization",
+            "authentication",
+            "access policy"
+          ],
+          "summary": "Rules to control physical and logical access to information and other associated assets shall be established and implemented based on business and information security requirements. This includes:\n- Access control policy covering all types of access\n- Rights of access based on need-to-use principle\n- Procedures for granting, reviewing, and revoking access rights\n- Documentation of access rights for each user and asset\n- Regular review of access rights (at least annually)\n- Removal of access rights when employment/contract terminates"
+        },
+        "relevance_score": 0.5,
+        "source_path": "rag\\data\\controls\\ISO27001-A.5.15.md"
+      }
+    ],
+    "plan_env": "prod",
+    "plan_region": "us-west-2",
+    "plan_scope": "data deletion and retention compliance",
+    "step_results": [
+      {
+        "error": null,
+        "findings": [],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 3,
+          "rules_failed": 0,
+          "rules_succeeded": 3
+        },
+        "status": "success",
+        "tool_name": "aws_config_eval"
+      },
+      {
+        "error": null,
+        "findings": [],
+        "metadata": {
+          "category": null,
+          "citations": [
+            {
+              "excerpt": "Organizations must:\n- Determine which events require auditing on the system\n- Coordinate security audit function with other organizational entities\n- Provide rationale for why auditable events are deemed adequate\n- Review and update audited events periodically\n- Audit events related to successful/unsuccessful account access, account management, object access, policy changes, privilege functions, and system-level events",
+              "framework": "NIST 800-53 Rev 5",
+              "id": "NIST 800-53 Rev 5:AU-2",
+              "metadata": {
+                "aws_config_rules": [
+                  "cloudtrail-enabled",
+                  "cloud-trail-log-file-validation-enabled",
+                  "s3-bucket-logging-enabled",
+                  "cloudwatch-alarm-action-check"
+                ],
+                "control_id": "AU-2",
+                "framework": "NIST 800-53 Rev 5",
+                "keywords": [
+                  "audit events",
+                  "logging",
+                  "CloudTrail",
+                  "monitoring",
+                  "audit trail",
+                  "event logging",
+                  "security logs",
+                  "compliance logging",
+                  "forensics",
+                  "accountability"
+                ],
+                "summary": "Organizations must:\n- Determine which events require auditing on the system\n- Coordinate security audit function with other organizational entities\n- Provide rationale for why auditable events are deemed adequate\n- Review and update audited events periodically\n- Audit events related to successful/unsuccessful account access, account management, object access, policy changes, privilege functions, and system-level events"
+              },
+              "relevance_score": 3.0,
+              "source_path": "rag\\data\\controls\\NIST-800-53-AU-2.md"
+            },
+            {
+              "excerpt": "Rules to control physical and logical access to information and other associated assets shall be established and implemented based on business and information security requirements. This includes:\n- Access control policy covering all types of access\n- Rights of access based on need-to-use principle\n- Procedures for granting, reviewing, and revoking access rights\n- Documentation of access rights for each user and asset\n- Regular review of access rights (at least annually)\n- Removal of access...",
+              "framework": "ISO/IEC 27001:2022",
+              "id": "ISO/IEC 27001:2022:A.5.15",
+              "metadata": {
+                "aws_config_rules": [
+                  "iam-user-mfa-enabled",
+                  "iam-user-no-policies-check",
+                  "access-keys-rotated",
+                  "s3-bucket-public-read-prohibited",
+                  "s3-bucket-server-side-encryption-enabled"
+                ],
+                "control_id": "A.5.15",
+                "framework": "ISO/IEC 27001:2022",
+                "keywords": [
+                  "ISO27001",
+                  "access control",
+                  "need-to-use",
+                  "least privilege",
+                  "identity management",
+                  "access rights",
+                  "permission management",
+                  "authorization",
+                  "authentication",
+                  "access policy"
+                ],
+                "summary": "Rules to control physical and logical access to information and other associated assets shall be established and implemented based on business and information security requirements. This includes:\n- Access control policy covering all types of access\n- Rights of access based on need-to-use principle\n- Procedures for granting, reviewing, and revoking access rights\n- Documentation of access rights for each user and asset\n- Regular review of access rights (at least annually)\n- Removal of access rights when employment/contract terminates"
+              },
+              "relevance_score": 0.5,
+              "source_path": "rag\\data\\controls\\ISO27001-A.5.15.md"
+            }
+          ],
+          "controls_retrieved": 2,
+          "framework": null,
+          "query": "data deletion compliance requirements"
+        },
+        "status": "success",
+        "tool": "rag_retrieve"
+      },
+      {
+        "error": null,
+        "findings": [],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 3,
+          "rules_failed": 0,
+          "rules_succeeded": 3
+        },
+        "status": "success",
+        "tool_name": "aws_config_eval"
+      }
+    ],
+    "steps_executed": 3,
+    "steps_failed": 0,
+    "steps_succeeded": 3
+  },
+  "non_compliant_count": 0,
+  "run_id": "RUN-20260217-181648-eb7b1ab0",
+  "summary": "Compliance scan completed. Found 0 resources: 0 compliant, 0 non-compliant. Framework: NIST-800-53.",
+  "timestamp": "2026-02-17T18:17:09.047488Z"
+}

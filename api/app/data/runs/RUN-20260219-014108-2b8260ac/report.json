@@ -1,0 +1,751 @@
+{
+  "compliant_count": 19,
+  "execution": {
+    "all_findings": [
+      {
+        "annotation": "Resource grc-guardian-cloudtrail-logs-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+          "source": "aws_config"
+        },
+        "resource_id": "grc-guardian-cloudtrail-logs-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-read-prohibited",
+        "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+      },
+      {
+        "annotation": "Resource grc-guardian-config-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+          "source": "aws_config"
+        },
+        "resource_id": "grc-guardian-config-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-read-prohibited",
+        "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-dev-backups-encrypted-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+          "source": "aws_config"
+        },
+        "resource_id": "org-dev-backups-encrypted-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-read-prohibited",
+        "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-dev-data-unencrypted-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+          "source": "aws_config"
+        },
+        "resource_id": "org-dev-data-unencrypted-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-read-prohibited",
+        "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+      },
+      {
+        "annotation": "The S3 bucket policy allows public read access.",
+        "compliance_type": "NON_COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+          "source": "aws_config"
+        },
+        "resource_id": "org-prod-assets-public-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-read-prohibited",
+        "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-prod-logs-private-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+          "source": "aws_config"
+        },
+        "resource_id": "org-prod-logs-private-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-read-prohibited",
+        "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+      },
+      {
+        "annotation": "Resource grc-guardian-cloudtrail-logs-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+          "source": "aws_config"
+        },
+        "resource_id": "grc-guardian-cloudtrail-logs-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-write-prohibited",
+        "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+      },
+      {
+        "annotation": "Resource grc-guardian-config-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+          "source": "aws_config"
+        },
+        "resource_id": "grc-guardian-config-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-write-prohibited",
+        "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-dev-backups-encrypted-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+          "source": "aws_config"
+        },
+        "resource_id": "org-dev-backups-encrypted-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-write-prohibited",
+        "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-dev-data-unencrypted-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+          "source": "aws_config"
+        },
+        "resource_id": "org-dev-data-unencrypted-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-write-prohibited",
+        "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-prod-assets-public-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+          "source": "aws_config"
+        },
+        "resource_id": "org-prod-assets-public-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-write-prohibited",
+        "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-prod-logs-private-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+          "source": "aws_config"
+        },
+        "resource_id": "org-prod-logs-private-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-write-prohibited",
+        "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+      },
+      {
+        "annotation": "Resource grc-guardian-cloudtrail-logs-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-17T12:51:44.921000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+          "source": "aws_config"
+        },
+        "resource_id": "grc-guardian-cloudtrail-logs-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-server-side-encryption-enabled",
+        "timestamp": "2026-02-17T12:51:44.921000-05:00Z"
+      },
+      {
+        "annotation": "Resource grc-guardian-config-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-17T12:51:38.339000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+          "source": "aws_config"
+        },
+        "resource_id": "grc-guardian-config-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-server-side-encryption-enabled",
+        "timestamp": "2026-02-17T12:51:38.339000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-dev-backups-encrypted-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-17T12:51:46.992000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+          "source": "aws_config"
+        },
+        "resource_id": "org-dev-backups-encrypted-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-server-side-encryption-enabled",
+        "timestamp": "2026-02-17T12:51:46.992000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-dev-data-unencrypted-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-17T12:51:40.044000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+          "source": "aws_config"
+        },
+        "resource_id": "org-dev-data-unencrypted-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-server-side-encryption-enabled",
+        "timestamp": "2026-02-17T12:51:40.044000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-prod-assets-public-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-17T12:51:42.275000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+          "source": "aws_config"
+        },
+        "resource_id": "org-prod-assets-public-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-server-side-encryption-enabled",
+        "timestamp": "2026-02-17T12:51:42.275000-05:00Z"
+      },
+      {
+        "annotation": "Resource org-prod-logs-private-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-17T12:51:45.735000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+          "source": "aws_config"
+        },
+        "resource_id": "org-prod-logs-private-599233349951",
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-server-side-encryption-enabled",
+        "timestamp": "2026-02-17T12:51:45.735000-05:00Z"
+      },
+      {
+        "annotation": "Resource 599233349951 passed compliance check: root-account-mfa-enabled",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.326000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qrk1xq",
+          "source": "aws_config"
+        },
+        "resource_id": "599233349951",
+        "resource_type": "AWS::::Account",
+        "rule": "root-account-mfa-enabled",
+        "timestamp": "2026-02-18T10:52:40.326000-05:00Z"
+      },
+      {
+        "annotation": "Resource AIDAYXBIXJE7W4C2DCY2R failed compliance check: iam-user-mfa-enabled",
+        "compliance_type": "NON_COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.303000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+          "source": "aws_config"
+        },
+        "resource_id": "AIDAYXBIXJE7W4C2DCY2R",
+        "resource_type": "AWS::IAM::User",
+        "rule": "iam-user-mfa-enabled",
+        "timestamp": "2026-02-18T10:52:40.303000-05:00Z"
+      },
+      {
+        "annotation": "Resource AIDAYXBIXJE7YTNWJ6EAI failed compliance check: iam-user-mfa-enabled",
+        "compliance_type": "NON_COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.303000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+          "source": "aws_config"
+        },
+        "resource_id": "AIDAYXBIXJE7YTNWJ6EAI",
+        "resource_type": "AWS::IAM::User",
+        "rule": "iam-user-mfa-enabled",
+        "timestamp": "2026-02-18T10:52:40.303000-05:00Z"
+      },
+      {
+        "annotation": "Resource AIDAYXBIXJE7ZPZ3YXJ5D failed compliance check: iam-user-mfa-enabled",
+        "compliance_type": "NON_COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T10:52:40.303000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+          "source": "aws_config"
+        },
+        "resource_id": "AIDAYXBIXJE7ZPZ3YXJ5D",
+        "resource_type": "AWS::IAM::User",
+        "rule": "iam-user-mfa-enabled",
+        "timestamp": "2026-02-18T10:52:40.303000-05:00Z"
+      },
+      {
+        "annotation": "Resource 599233349951 passed compliance check: cloudtrail-enabled",
+        "compliance_type": "COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-18T11:56:40.373000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-br5tj3",
+          "source": "aws_config"
+        },
+        "resource_id": "599233349951",
+        "resource_type": "AWS::::Account",
+        "rule": "cloudtrail-enabled",
+        "timestamp": "2026-02-18T11:56:40.373000-05:00Z"
+      }
+    ],
+    "citations": [],
+    "compliant_count": 19,
+    "non_compliant_count": 4,
+    "plan_env": "prod",
+    "plan_region": "us-west-2",
+    "plan_scope": "ALL",
+    "step_results": [
+      {
+        "error": null,
+        "findings": [
+          {
+            "annotation": "Resource grc-guardian-cloudtrail-logs-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+              "source": "aws_config"
+            },
+            "resource_id": "grc-guardian-cloudtrail-logs-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-read-prohibited",
+            "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+          },
+          {
+            "annotation": "Resource grc-guardian-config-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+              "source": "aws_config"
+            },
+            "resource_id": "grc-guardian-config-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-read-prohibited",
+            "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-dev-backups-encrypted-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+              "source": "aws_config"
+            },
+            "resource_id": "org-dev-backups-encrypted-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-read-prohibited",
+            "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-dev-data-unencrypted-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+              "source": "aws_config"
+            },
+            "resource_id": "org-dev-data-unencrypted-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-read-prohibited",
+            "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+          },
+          {
+            "annotation": "The S3 bucket policy allows public read access.",
+            "compliance_type": "NON_COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+              "source": "aws_config"
+            },
+            "resource_id": "org-prod-assets-public-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-read-prohibited",
+            "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-prod-logs-private-599233349951 passed compliance check: s3-bucket-public-read-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.351000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-powujq",
+              "source": "aws_config"
+            },
+            "resource_id": "org-prod-logs-private-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-read-prohibited",
+            "timestamp": "2026-02-18T10:52:40.351000-05:00Z"
+          },
+          {
+            "annotation": "Resource grc-guardian-cloudtrail-logs-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+              "source": "aws_config"
+            },
+            "resource_id": "grc-guardian-cloudtrail-logs-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-write-prohibited",
+            "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+          },
+          {
+            "annotation": "Resource grc-guardian-config-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+              "source": "aws_config"
+            },
+            "resource_id": "grc-guardian-config-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-write-prohibited",
+            "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-dev-backups-encrypted-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+              "source": "aws_config"
+            },
+            "resource_id": "org-dev-backups-encrypted-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-write-prohibited",
+            "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-dev-data-unencrypted-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+              "source": "aws_config"
+            },
+            "resource_id": "org-dev-data-unencrypted-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-write-prohibited",
+            "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-prod-assets-public-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+              "source": "aws_config"
+            },
+            "resource_id": "org-prod-assets-public-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-write-prohibited",
+            "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-prod-logs-private-599233349951 passed compliance check: s3-bucket-public-write-prohibited",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.375000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qo2bx5",
+              "source": "aws_config"
+            },
+            "resource_id": "org-prod-logs-private-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-public-write-prohibited",
+            "timestamp": "2026-02-18T10:52:40.375000-05:00Z"
+          },
+          {
+            "annotation": "Resource grc-guardian-cloudtrail-logs-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-17T12:51:44.921000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+              "source": "aws_config"
+            },
+            "resource_id": "grc-guardian-cloudtrail-logs-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-server-side-encryption-enabled",
+            "timestamp": "2026-02-17T12:51:44.921000-05:00Z"
+          },
+          {
+            "annotation": "Resource grc-guardian-config-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-17T12:51:38.339000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+              "source": "aws_config"
+            },
+            "resource_id": "grc-guardian-config-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-server-side-encryption-enabled",
+            "timestamp": "2026-02-17T12:51:38.339000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-dev-backups-encrypted-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-17T12:51:46.992000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+              "source": "aws_config"
+            },
+            "resource_id": "org-dev-backups-encrypted-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-server-side-encryption-enabled",
+            "timestamp": "2026-02-17T12:51:46.992000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-dev-data-unencrypted-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-17T12:51:40.044000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+              "source": "aws_config"
+            },
+            "resource_id": "org-dev-data-unencrypted-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-server-side-encryption-enabled",
+            "timestamp": "2026-02-17T12:51:40.044000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-prod-assets-public-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-17T12:51:42.275000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+              "source": "aws_config"
+            },
+            "resource_id": "org-prod-assets-public-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-server-side-encryption-enabled",
+            "timestamp": "2026-02-17T12:51:42.275000-05:00Z"
+          },
+          {
+            "annotation": "Resource org-prod-logs-private-599233349951 passed compliance check: s3-bucket-server-side-encryption-enabled",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-17T12:51:45.735000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-lzh6yz",
+              "source": "aws_config"
+            },
+            "resource_id": "org-prod-logs-private-599233349951",
+            "resource_type": "AWS::S3::Bucket",
+            "rule": "s3-bucket-server-side-encryption-enabled",
+            "timestamp": "2026-02-17T12:51:45.735000-05:00Z"
+          }
+        ],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 3,
+          "rules_failed": 0,
+          "rules_succeeded": 3
+        },
+        "status": "success",
+        "tool_name": "aws_config_eval"
+      },
+      {
+        "error": null,
+        "findings": [
+          {
+            "annotation": "Resource 599233349951 passed compliance check: root-account-mfa-enabled",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.326000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-qrk1xq",
+              "source": "aws_config"
+            },
+            "resource_id": "599233349951",
+            "resource_type": "AWS::::Account",
+            "rule": "root-account-mfa-enabled",
+            "timestamp": "2026-02-18T10:52:40.326000-05:00Z"
+          },
+          {
+            "annotation": "Resource AIDAYXBIXJE7W4C2DCY2R failed compliance check: iam-user-mfa-enabled",
+            "compliance_type": "NON_COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.303000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+              "source": "aws_config"
+            },
+            "resource_id": "AIDAYXBIXJE7W4C2DCY2R",
+            "resource_type": "AWS::IAM::User",
+            "rule": "iam-user-mfa-enabled",
+            "timestamp": "2026-02-18T10:52:40.303000-05:00Z"
+          },
+          {
+            "annotation": "Resource AIDAYXBIXJE7YTNWJ6EAI failed compliance check: iam-user-mfa-enabled",
+            "compliance_type": "NON_COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.303000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+              "source": "aws_config"
+            },
+            "resource_id": "AIDAYXBIXJE7YTNWJ6EAI",
+            "resource_type": "AWS::IAM::User",
+            "rule": "iam-user-mfa-enabled",
+            "timestamp": "2026-02-18T10:52:40.303000-05:00Z"
+          },
+          {
+            "annotation": "Resource AIDAYXBIXJE7ZPZ3YXJ5D failed compliance check: iam-user-mfa-enabled",
+            "compliance_type": "NON_COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T10:52:40.303000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+              "source": "aws_config"
+            },
+            "resource_id": "AIDAYXBIXJE7ZPZ3YXJ5D",
+            "resource_type": "AWS::IAM::User",
+            "rule": "iam-user-mfa-enabled",
+            "timestamp": "2026-02-18T10:52:40.303000-05:00Z"
+          }
+        ],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 2,
+          "rules_failed": 0,
+          "rules_succeeded": 2
+        },
+        "status": "success",
+        "tool_name": "aws_config_eval"
+      },
+      {
+        "error": null,
+        "findings": [
+          {
+            "annotation": "Resource 599233349951 passed compliance check: cloudtrail-enabled",
+            "compliance_type": "COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-18T11:56:40.373000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-br5tj3",
+              "source": "aws_config"
+            },
+            "resource_id": "599233349951",
+            "resource_type": "AWS::::Account",
+            "rule": "cloudtrail-enabled",
+            "timestamp": "2026-02-18T11:56:40.373000-05:00Z"
+          }
+        ],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 1,
+          "rules_failed": 0,
+          "rules_succeeded": 1
+        },
+        "status": "success",
+        "tool_name": "aws_config_eval"
+      }
+    ],
+    "steps_executed": 3,
+    "steps_failed": 0,
+    "steps_succeeded": 3
+  },
+  "non_compliant_count": 4,
+  "run_id": "RUN-20260219-014108-2b8260ac",
+  "summary": "Based on the 15 shown findings out of 23 total, there are several security concerns in the prod environment. The S3 bucket org-prod-assets-public-599233349951 allows public read access, which violates access control policies. All buckets are protected against public write access. While several buckets show proper encryption (including grc-guardian-cloudtrail-logs, grc-guardian-config, and org-dev-backups-encrypted), the findings are incomplete for full encryption status. No IAM MFA or CloudTrail findings were included in the shown results.",
+  "timestamp": "2026-02-19T01:41:44.513489Z"
+}

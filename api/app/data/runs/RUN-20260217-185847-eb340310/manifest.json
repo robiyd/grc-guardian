@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "plan.json",
+      "sha256": "f5e6fda6956b38b62349122b2f16f92d901c2dbc1013652f65c5274e611df91c",
+      "size_bytes": 1295
+    },
+    {
+      "filename": "findings.json",
+      "sha256": "72e42eba0ebda222ce872d7d99efab1fc4a6a91eadb355ba8781a7aea82e5430",
+      "size_bytes": 93
+    },
+    {
+      "filename": "findings.csv",
+      "sha256": "2feb874158fbca9289115e4da66ff8dc41d204060ef0b7fa3007cae697152df7",
+      "size_bytes": 89
+    },
+    {
+      "filename": "report.json",
+      "sha256": "1dd4c14988262c2ce53e64321c2deb9a0ec69a62385f3232dad69b97f3687ad6",
+      "size_bytes": 1045
+    }
+  ],
+  "metadata": {
+    "framework": null,
+    "prompt": "audit",
+    "scope": null
+  },
+  "run_id": "RUN-20260217-185847-eb340310",
+  "summary": {
+    "total_files": 4,
+    "total_size_bytes": 2522
+  },
+  "timestamp": "2026-02-17T18:58:55.403058Z",
+  "version": "1.0.0"
+}

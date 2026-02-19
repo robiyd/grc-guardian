@@ -1,0 +1,4 @@
+run_id,resource_id,resource_type,rule_name,status,severity,description,timestamp,region
+RUN-20260217-185621-c5482ac7,AIDAYXBIXJE7W4C2DCY2R,AWS::IAM::User,iam-user-mfa-enabled,NON_COMPLIANT,HIGH,Resource AIDAYXBIXJE7W4C2DCY2R failed compliance check: iam-user-mfa-enabled,2026-02-17T12:28:43.250000-05:00Z,
+RUN-20260217-185621-c5482ac7,AIDAYXBIXJE7YTNWJ6EAI,AWS::IAM::User,iam-user-mfa-enabled,NON_COMPLIANT,HIGH,Resource AIDAYXBIXJE7YTNWJ6EAI failed compliance check: iam-user-mfa-enabled,2026-02-17T12:28:43.250000-05:00Z,
+RUN-20260217-185621-c5482ac7,AIDAYXBIXJE7ZPZ3YXJ5D,AWS::IAM::User,iam-user-mfa-enabled,NON_COMPLIANT,HIGH,Resource AIDAYXBIXJE7ZPZ3YXJ5D failed compliance check: iam-user-mfa-enabled,2026-02-17T12:28:43.250000-05:00Z,

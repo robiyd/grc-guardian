@@ -1,0 +1,2 @@
+run_id,resource_id,resource_type,rule_name,status,severity,description,timestamp,region
+RUN-20260217-185434-2c061c11,599233349951,AWS::::Account,iam-password-policy,NON_COMPLIANT,HIGH,Resource 599233349951 failed compliance check: iam-password-policy,2026-02-17T10:56:47.685000-05:00Z,

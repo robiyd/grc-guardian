@@ -1,0 +1,60 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "S3 security, IAM MFA, CloudTrail compliance mapped to NIST AC-2 and AU-2",
+  "steps": [
+    {
+      "description": "Check S3 bucket public access settings",
+      "params": {
+        "resource_type": "AWS::S3::Bucket",
+        "rules": [
+          "s3-bucket-public-read-prohibited",
+          "s3-bucket-public-write-prohibited"
+        ]
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Verify S3 bucket encryption",
+      "params": {
+        "resource_type": "AWS::S3::Bucket",
+        "rules": [
+          "s3-bucket-server-side-encryption-enabled"
+        ]
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Check IAM MFA requirements",
+      "params": {
+        "resource_type": "AWS::IAM::User",
+        "rules": [
+          "mfa-enabled-for-iam-console-access"
+        ]
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Evaluate CloudTrail configuration",
+      "params": {
+        "resource_type": "AWS::CloudTrail::Trail",
+        "rules": [
+          "cloud-trail-encryption-enabled",
+          "cloud-trail-log-file-validation-enabled"
+        ]
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Map findings to NIST controls",
+      "params": {
+        "controls": [
+          "AC-2",
+          "AU-2"
+        ],
+        "findings_source": "aws_config"
+      },
+      "tool": "rag_retrieve"
+    }
+  ]
+}

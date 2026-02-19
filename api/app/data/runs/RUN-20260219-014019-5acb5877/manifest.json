@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "plan.json",
+      "sha256": "15a420c21408fe3abad715ea7be866c811addd1a3abd19895b39856dac0a5e77",
+      "size_bytes": 1039
+    },
+    {
+      "filename": "findings.json",
+      "sha256": "283dddf035e721195baccccd96889d86c7d086136a79f4b9ce95769e7502bb61",
+      "size_bytes": 15321
+    },
+    {
+      "filename": "findings.csv",
+      "sha256": "1072b6dffb83f5b8328f44cfceef741610d7c440fc490a580293bbc19a7bfd81",
+      "size_bytes": 6048
+    },
+    {
+      "filename": "report.json",
+      "sha256": "79e57ae4967be246fa1929b280150e3c5dc018990eb3e03709c925cd65568761",
+      "size_bytes": 35013
+    }
+  ],
+  "metadata": {
+    "framework": "NIST-800-53",
+    "prompt": "Check prod for S3 public access, encryption, IAM MFA, and CloudTrail. Map findings to NIST AC-2 and AU-2.",
+    "scope": "prod"
+  },
+  "run_id": "RUN-20260219-014019-5acb5877",
+  "summary": {
+    "total_files": 4,
+    "total_size_bytes": 57421
+  },
+  "timestamp": "2026-02-19T01:40:56.101365Z",
+  "version": "1.0.0"
+}

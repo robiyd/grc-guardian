@@ -1,0 +1,228 @@
+{
+  "compliant_count": 0,
+  "execution": {
+    "all_findings": [],
+    "citations": [
+      {
+        "excerpt": "Rules to control physical and logical access to information and other associated assets shall be established and implemented based on business and information security requirements. This includes:\n- Access control policy covering all types of access\n- Rights of access based on need-to-use principle\n- Procedures for granting, reviewing, and revoking access rights\n- Documentation of access rights for each user and asset\n- Regular review of access rights (at least annually)\n- Removal of access...",
+        "framework": "ISO/IEC 27001:2022",
+        "id": "ISO/IEC 27001:2022:A.5.15",
+        "metadata": {
+          "aws_config_rules": [
+            "iam-user-mfa-enabled",
+            "iam-user-no-policies-check",
+            "access-keys-rotated",
+            "s3-bucket-public-read-prohibited",
+            "s3-bucket-server-side-encryption-enabled"
+          ],
+          "control_id": "A.5.15",
+          "framework": "ISO/IEC 27001:2022",
+          "keywords": [
+            "ISO27001",
+            "access control",
+            "need-to-use",
+            "least privilege",
+            "identity management",
+            "access rights",
+            "permission management",
+            "authorization",
+            "authentication",
+            "access policy"
+          ],
+          "summary": "Rules to control physical and logical access to information and other associated assets shall be established and implemented based on business and information security requirements. This includes:\n- Access control policy covering all types of access\n- Rights of access based on need-to-use principle\n- Procedures for granting, reviewing, and revoking access rights\n- Documentation of access rights for each user and asset\n- Regular review of access rights (at least annually)\n- Removal of access rights when employment/contract terminates"
+        },
+        "relevance_score": 23.5,
+        "source_path": "rag\\data\\controls\\ISO27001-A.5.15.md"
+      },
+      {
+        "excerpt": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives. This includes:\n- Identifying and authenticating users\n- Considering network segmentation\n- Managing the identification, authentication, and authorization process\n- Managing privileged access credentials and removing access when no longer authorized",
+        "framework": "SOC 2 (Trust Services Criteria)",
+        "id": "SOC 2 (Trust Services Criteria):CC6.1",
+        "metadata": {
+          "aws_config_rules": [
+            "iam-user-mfa-enabled",
+            "root-account-mfa-enabled",
+            "s3-bucket-public-read-prohibited",
+            "s3-bucket-public-write-prohibited",
+            "iam-password-policy"
+          ],
+          "control_id": "CC6.1",
+          "framework": "SOC 2 (Trust Services Criteria)",
+          "keywords": [
+            "SOC2",
+            "logical access",
+            "physical access",
+            "authentication",
+            "authorization",
+            "MFA",
+            "access controls",
+            "identity management",
+            "trust services",
+            "security principle"
+          ],
+          "summary": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives. This includes:\n- Identifying and authenticating users\n- Considering network segmentation\n- Managing the identification, authentication, and authorization process\n- Managing privileged access credentials and removing access when no longer authorized"
+        },
+        "relevance_score": 18.5,
+        "source_path": "rag\\data\\controls\\SOC2-CC6.1.md"
+      },
+      {
+        "excerpt": "Organizations must:\n- Employ the principle of least privilege for system access\n- Authorize access to security functions and security-relevant information only\n- Grant users (or processes acting on behalf of users) only the minimum privileges necessary\n- Implement least privilege for specific duties and information systems\n- Review user privileges periodically and adjust as needed",
+        "framework": "NIST 800-53 Rev 5",
+        "id": "NIST 800-53 Rev 5:AC-6",
+        "metadata": {
+          "aws_config_rules": [
+            "iam-policy-no-statements-with-admin-access",
+            "iam-user-no-policies-check",
+            "s3-bucket-public-read-prohibited",
+            "s3-bucket-public-write-prohibited"
+          ],
+          "control_id": "AC-6",
+          "framework": "NIST 800-53 Rev 5",
+          "keywords": [
+            "least privilege",
+            "permissions",
+            "IAM policies",
+            "excessive permissions",
+            "admin access",
+            "privilege escalation",
+            "overprivileged",
+            "access control",
+            "RBAC"
+          ],
+          "summary": "Organizations must:\n- Employ the principle of least privilege for system access\n- Authorize access to security functions and security-relevant information only\n- Grant users (or processes acting on behalf of users) only the minimum privileges necessary\n- Implement least privilege for specific duties and information systems\n- Review user privileges periodically and adjust as needed"
+        },
+        "relevance_score": 17.0,
+        "source_path": "rag\\data\\controls\\NIST-800-53-AC-6.md"
+      }
+    ],
+    "plan_env": "prod",
+    "plan_region": "us-west-2",
+    "plan_scope": "S3 public access and encryption compliance check",
+    "step_results": [
+      {
+        "error": "No rules specified in params",
+        "findings": [],
+        "status": "error",
+        "tool": "aws_config_eval"
+      },
+      {
+        "error": "No rules specified in params",
+        "findings": [],
+        "status": "error",
+        "tool": "aws_config_eval"
+      },
+      {
+        "error": null,
+        "findings": [],
+        "metadata": {
+          "category": null,
+          "citations": [
+            {
+              "excerpt": "Rules to control physical and logical access to information and other associated assets shall be established and implemented based on business and information security requirements. This includes:\n- Access control policy covering all types of access\n- Rights of access based on need-to-use principle\n- Procedures for granting, reviewing, and revoking access rights\n- Documentation of access rights for each user and asset\n- Regular review of access rights (at least annually)\n- Removal of access...",
+              "framework": "ISO/IEC 27001:2022",
+              "id": "ISO/IEC 27001:2022:A.5.15",
+              "metadata": {
+                "aws_config_rules": [
+                  "iam-user-mfa-enabled",
+                  "iam-user-no-policies-check",
+                  "access-keys-rotated",
+                  "s3-bucket-public-read-prohibited",
+                  "s3-bucket-server-side-encryption-enabled"
+                ],
+                "control_id": "A.5.15",
+                "framework": "ISO/IEC 27001:2022",
+                "keywords": [
+                  "ISO27001",
+                  "access control",
+                  "need-to-use",
+                  "least privilege",
+                  "identity management",
+                  "access rights",
+                  "permission management",
+                  "authorization",
+                  "authentication",
+                  "access policy"
+                ],
+                "summary": "Rules to control physical and logical access to information and other associated assets shall be established and implemented based on business and information security requirements. This includes:\n- Access control policy covering all types of access\n- Rights of access based on need-to-use principle\n- Procedures for granting, reviewing, and revoking access rights\n- Documentation of access rights for each user and asset\n- Regular review of access rights (at least annually)\n- Removal of access rights when employment/contract terminates"
+              },
+              "relevance_score": 23.5,
+              "source_path": "rag\\data\\controls\\ISO27001-A.5.15.md"
+            },
+            {
+              "excerpt": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives. This includes:\n- Identifying and authenticating users\n- Considering network segmentation\n- Managing the identification, authentication, and authorization process\n- Managing privileged access credentials and removing access when no longer authorized",
+              "framework": "SOC 2 (Trust Services Criteria)",
+              "id": "SOC 2 (Trust Services Criteria):CC6.1",
+              "metadata": {
+                "aws_config_rules": [
+                  "iam-user-mfa-enabled",
+                  "root-account-mfa-enabled",
+                  "s3-bucket-public-read-prohibited",
+                  "s3-bucket-public-write-prohibited",
+                  "iam-password-policy"
+                ],
+                "control_id": "CC6.1",
+                "framework": "SOC 2 (Trust Services Criteria)",
+                "keywords": [
+                  "SOC2",
+                  "logical access",
+                  "physical access",
+                  "authentication",
+                  "authorization",
+                  "MFA",
+                  "access controls",
+                  "identity management",
+                  "trust services",
+                  "security principle"
+                ],
+                "summary": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives. This includes:\n- Identifying and authenticating users\n- Considering network segmentation\n- Managing the identification, authentication, and authorization process\n- Managing privileged access credentials and removing access when no longer authorized"
+              },
+              "relevance_score": 18.5,
+              "source_path": "rag\\data\\controls\\SOC2-CC6.1.md"
+            },
+            {
+              "excerpt": "Organizations must:\n- Employ the principle of least privilege for system access\n- Authorize access to security functions and security-relevant information only\n- Grant users (or processes acting on behalf of users) only the minimum privileges necessary\n- Implement least privilege for specific duties and information systems\n- Review user privileges periodically and adjust as needed",
+              "framework": "NIST 800-53 Rev 5",
+              "id": "NIST 800-53 Rev 5:AC-6",
+              "metadata": {
+                "aws_config_rules": [
+                  "iam-policy-no-statements-with-admin-access",
+                  "iam-user-no-policies-check",
+                  "s3-bucket-public-read-prohibited",
+                  "s3-bucket-public-write-prohibited"
+                ],
+                "control_id": "AC-6",
+                "framework": "NIST 800-53 Rev 5",
+                "keywords": [
+                  "least privilege",
+                  "permissions",
+                  "IAM policies",
+                  "excessive permissions",
+                  "admin access",
+                  "privilege escalation",
+                  "overprivileged",
+                  "access control",
+                  "RBAC"
+                ],
+                "summary": "Organizations must:\n- Employ the principle of least privilege for system access\n- Authorize access to security functions and security-relevant information only\n- Grant users (or processes acting on behalf of users) only the minimum privileges necessary\n- Implement least privilege for specific duties and information systems\n- Review user privileges periodically and adjust as needed"
+              },
+              "relevance_score": 17.0,
+              "source_path": "rag\\data\\controls\\NIST-800-53-AC-6.md"
+            }
+          ],
+          "controls_retrieved": 3,
+          "framework": null,
+          "query": "s3 bucket encryption and public access requirements"
+        },
+        "status": "success",
+        "tool": "rag_retrieve"
+      }
+    ],
+    "steps_executed": 3,
+    "steps_failed": 2,
+    "steps_succeeded": 1
+  },
+  "non_compliant_count": 0,
+  "run_id": "RUN-20260217-190724-8b427c6e",
+  "summary": "Compliance scan completed. Found 0 resources: 0 compliant, 0 non-compliant. Framework: PCI-DSS.",
+  "timestamp": "2026-02-17T19:07:31.327846Z"
+}

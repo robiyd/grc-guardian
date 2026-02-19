@@ -1,0 +1,38 @@
+{
+  "compliant_count": 0,
+  "execution": {
+    "all_findings": [],
+    "citations": [],
+    "plan_env": "prod",
+    "plan_region": "us-west-2",
+    "plan_scope": "audit",
+    "step_results": [
+      {
+        "error": "No rules specified in params",
+        "findings": [],
+        "status": "error",
+        "tool": "aws_config_eval"
+      },
+      {
+        "error": "No query, framework, or category specified",
+        "findings": [],
+        "metadata": {},
+        "status": "error",
+        "tool": "rag_retrieve"
+      },
+      {
+        "error": "No rules specified in params",
+        "findings": [],
+        "status": "error",
+        "tool": "aws_config_eval"
+      }
+    ],
+    "steps_executed": 3,
+    "steps_failed": 3,
+    "steps_succeeded": 0
+  },
+  "non_compliant_count": 0,
+  "run_id": "RUN-20260217-185609-ce09c55e",
+  "summary": "Compliance scan completed. Found 0 resources: 0 compliant, 0 non-compliant. Framework: General.",
+  "timestamp": "2026-02-17T18:56:17.744912Z"
+}

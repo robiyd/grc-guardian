@@ -1,0 +1,39 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "S3 bucket security assessment",
+  "steps": [
+    {
+      "description": "Check S3 bucket encryption settings",
+      "params": {
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-server-side-encryption-enabled"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Verify S3 bucket public access blocks",
+      "params": {
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-account-level-public-access-blocks"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Check S3 bucket versioning status",
+      "params": {
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-versioning-enabled"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Get S3 security best practices documentation",
+      "params": {
+        "doc_type": "security_policies",
+        "query": "AWS S3 security best practices and compliance requirements"
+      },
+      "tool": "rag_retrieve"
+    }
+  ]
+}

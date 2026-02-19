@@ -1,0 +1,42 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "s3_bucket_security_scan",
+  "steps": [
+    {
+      "description": "Check S3 buckets for public access",
+      "params": {
+        "compliance_type": "Config",
+        "resource_type": "AWS::S3::Bucket",
+        "rule_name": "s3-bucket-public-read-prohibited"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Check S3 buckets for public write access",
+      "params": {
+        "compliance_type": "Config",
+        "resource_type": "AWS::S3::Bucket",
+        "rule_name": "s3-bucket-public-write-prohibited"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Verify S3 bucket encryption",
+      "params": {
+        "compliance_type": "Config",
+        "resource_type": "AWS::S3::Bucket",
+        "rule_name": "s3-bucket-server-side-encryption-enabled"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Get S3 bucket policy documentation",
+      "params": {
+        "doc_type": "aws_security",
+        "query": "s3 bucket security best practices"
+      },
+      "tool": "rag_retrieve"
+    }
+  ]
+}

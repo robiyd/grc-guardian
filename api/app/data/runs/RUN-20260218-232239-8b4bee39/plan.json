@@ -1,0 +1,40 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "ALL",
+  "steps": [
+    {
+      "description": "Check S3 bucket security configurations (Maps to NIST AC-2 Access Control)",
+      "params": {
+        "rules": [
+          "s3-bucket-public-read-prohibited",
+          "s3-bucket-public-write-prohibited",
+          "s3-bucket-server-side-encryption-enabled"
+        ]
+      },
+      "step_number": 1,
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Verify IAM security controls (Maps to NIST AC-2 Account Management)",
+      "params": {
+        "rules": [
+          "root-account-mfa-enabled",
+          "iam-user-mfa-enabled"
+        ]
+      },
+      "step_number": 2,
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Validate CloudTrail logging (Maps to NIST AU-2 Audit Events)",
+      "params": {
+        "rules": [
+          "cloudtrail-enabled"
+        ]
+      },
+      "step_number": 3,
+      "tool": "aws_config_eval"
+    }
+  ]
+}

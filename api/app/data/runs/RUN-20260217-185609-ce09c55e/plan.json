@@ -1,0 +1,56 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "audit",
+  "steps": [
+    {
+      "description": "Check AWS Config rules compliance status",
+      "params": {
+        "compliance_types": [
+          "NON_COMPLIANT",
+          "NOT_APPLICABLE"
+        ],
+        "resource_types": [
+          "AWS::S3::Bucket",
+          "AWS::IAM::Role",
+          "AWS::EC2::Instance"
+        ],
+        "rule_types": [
+          "AWS_MANAGED",
+          "CUSTOM"
+        ]
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Retrieve relevant audit policies and procedures",
+      "params": {
+        "categories": [
+          "security",
+          "compliance",
+          "governance"
+        ],
+        "doc_types": [
+          "policies",
+          "procedures",
+          "controls"
+        ],
+        "max_results": 50
+      },
+      "tool": "rag_retrieve"
+    },
+    {
+      "description": "Evaluate resource configuration history",
+      "params": {
+        "include_deleted": true,
+        "resource_types": [
+          "AWS::CloudTrail::Trail",
+          "AWS::KMS::Key",
+          "AWS::IAM::Policy"
+        ],
+        "time_range": "90d"
+      },
+      "tool": "aws_config_eval"
+    }
+  ]
+}

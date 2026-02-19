@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "plan.json",
+      "sha256": "146b08fdc8b6b93744d60ef75cd66dfd553e85a5f1495a1eff8fe8dfcb2bf733",
+      "size_bytes": 1046
+    },
+    {
+      "filename": "findings.json",
+      "sha256": "1fb74ceccbf2499503be5d1656328369e272b7cceeac4ec9d20ddc2d6b499d8a",
+      "size_bytes": 93
+    },
+    {
+      "filename": "findings.csv",
+      "sha256": "2feb874158fbca9289115e4da66ff8dc41d204060ef0b7fa3007cae697152df7",
+      "size_bytes": 89
+    },
+    {
+      "filename": "report.json",
+      "sha256": "abbd9785660fb3228c5a47c306f0a2b1bae75f62ef80f227efa6de4e4ece5666",
+      "size_bytes": 13124
+    }
+  ],
+  "metadata": {
+    "framework": null,
+    "prompt": "Check S3 security",
+    "scope": null
+  },
+  "run_id": "RUN-20260217-185835-b864c464",
+  "summary": {
+    "total_files": 4,
+    "total_size_bytes": 14352
+  },
+  "timestamp": "2026-02-17T18:58:43.576267Z",
+  "version": "1.0.0"
+}

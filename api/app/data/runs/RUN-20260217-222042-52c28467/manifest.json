@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "plan.json",
+      "sha256": "2c60fd5a92456b06346550a708646694c223f21ddaaf5ef690c443e556365168",
+      "size_bytes": 883
+    },
+    {
+      "filename": "findings.json",
+      "sha256": "459b781b5a4a39da1447a5bd46488cbbeefd8e5c6faff90f374796c594c386b7",
+      "size_bytes": 93
+    },
+    {
+      "filename": "findings.csv",
+      "sha256": "2feb874158fbca9289115e4da66ff8dc41d204060ef0b7fa3007cae697152df7",
+      "size_bytes": 89
+    },
+    {
+      "filename": "report.json",
+      "sha256": "bf0eb6c9d5a9780a388721eed58cf85eebc4effdb0a51b1b7ecd014b4ceba16e",
+      "size_bytes": 13090
+    }
+  ],
+  "metadata": {
+    "framework": "NIST-800-53",
+    "prompt": "Check prod for S3 public access, encryption",
+    "scope": "prod"
+  },
+  "run_id": "RUN-20260217-222042-52c28467",
+  "summary": {
+    "total_files": 4,
+    "total_size_bytes": 14155
+  },
+  "timestamp": "2026-02-17T22:20:49.600825Z",
+  "version": "1.0.0"
+}

@@ -1,0 +1,27 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "S3",
+  "steps": [
+    {
+      "description": "Check for publicly readable S3 buckets",
+      "params": {
+        "rules": [
+          "s3-bucket-public-read-prohibited"
+        ]
+      },
+      "step_number": 1,
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Check for publicly writable S3 buckets",
+      "params": {
+        "rules": [
+          "s3-bucket-public-write-prohibited"
+        ]
+      },
+      "step_number": 2,
+      "tool": "aws_config_eval"
+    }
+  ]
+}

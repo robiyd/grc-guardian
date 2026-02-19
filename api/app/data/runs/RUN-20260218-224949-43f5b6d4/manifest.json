@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "plan.json",
+      "sha256": "c452adf01c5d87c3639fd18aa01f0d4543e44606bee85f11aecf63d0b1ce6759",
+      "size_bytes": 1002
+    },
+    {
+      "filename": "findings.json",
+      "sha256": "2f0fa7f877ef0460fbcae59fec94f6f29920b4443bac53736f072bec2ac29e4c",
+      "size_bytes": 21757
+    },
+    {
+      "filename": "findings.csv",
+      "sha256": "304fece873408956e4bfd1ad99e7daa6d536f27c27bdc61ba0dacccb19c28a77",
+      "size_bytes": 8456
+    },
+    {
+      "filename": "report.json",
+      "sha256": "071a04fc7e2b4f3760ed622a1fef15fd2a8b076bb5f0be4ae2fb94557c577263",
+      "size_bytes": 49339
+    }
+  ],
+  "metadata": {
+    "framework": "NIST-800-53",
+    "prompt": "list me resources which are not compliant",
+    "scope": "prod"
+  },
+  "run_id": "RUN-20260218-224949-43f5b6d4",
+  "summary": {
+    "total_files": 4,
+    "total_size_bytes": 80554
+  },
+  "timestamp": "2026-02-18T22:50:20.920496Z",
+  "version": "1.0.0"
+}

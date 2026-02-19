@@ -1,0 +1,316 @@
+{
+  "compliant_count": 0,
+  "execution": {
+    "all_findings": [
+      {
+        "annotation": "Resource AIDAYXBIXJE7W4C2DCY2R failed compliance check: iam-user-mfa-enabled",
+        "compliance_type": "NON_COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-17T12:28:43.250000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+          "source": "aws_config"
+        },
+        "resource_id": "AIDAYXBIXJE7W4C2DCY2R",
+        "resource_type": "AWS::IAM::User",
+        "rule": "iam-user-mfa-enabled",
+        "timestamp": "2026-02-17T12:28:43.250000-05:00Z"
+      },
+      {
+        "annotation": "Resource AIDAYXBIXJE7YTNWJ6EAI failed compliance check: iam-user-mfa-enabled",
+        "compliance_type": "NON_COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-17T12:28:43.250000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+          "source": "aws_config"
+        },
+        "resource_id": "AIDAYXBIXJE7YTNWJ6EAI",
+        "resource_type": "AWS::IAM::User",
+        "rule": "iam-user-mfa-enabled",
+        "timestamp": "2026-02-17T12:28:43.250000-05:00Z"
+      },
+      {
+        "annotation": "Resource AIDAYXBIXJE7ZPZ3YXJ5D failed compliance check: iam-user-mfa-enabled",
+        "compliance_type": "NON_COMPLIANT",
+        "evidence": {
+          "account_id": null,
+          "recorded_at": "2026-02-17T12:28:43.250000-05:00Z",
+          "region": "us-west-2",
+          "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+          "source": "aws_config"
+        },
+        "resource_id": "AIDAYXBIXJE7ZPZ3YXJ5D",
+        "resource_type": "AWS::IAM::User",
+        "rule": "iam-user-mfa-enabled",
+        "timestamp": "2026-02-17T12:28:43.250000-05:00Z"
+      }
+    ],
+    "citations": [
+      {
+        "excerpt": "Organizations must:\n- Establish conditions for group and role membership\n- Identify authorized users, group/role membership, and access authorizations\n- Require approval from designated personnel for account creation\n- Create, enable, modify, disable, and remove accounts in accordance with policy\n- Monitor system account use and review accounts periodically\n- Notify account managers when accounts are no longer required\n- Deactivate temporary/emergency accounts after an organization-defined time...",
+        "framework": "NIST 800-53 Rev 5",
+        "id": "NIST 800-53 Rev 5:AC-2",
+        "metadata": {
+          "aws_config_rules": [
+            "iam-user-mfa-enabled",
+            "iam-password-policy",
+            "access-keys-rotated",
+            "iam-user-no-policies-check"
+          ],
+          "control_id": "AC-2",
+          "framework": "NIST 800-53 Rev 5",
+          "keywords": [
+            "account management",
+            "IAM",
+            "user accounts",
+            "MFA",
+            "access keys",
+            "authentication",
+            "identity lifecycle",
+            "provisioning",
+            "deprovisioning"
+          ],
+          "summary": "Organizations must:\n- Establish conditions for group and role membership\n- Identify authorized users, group/role membership, and access authorizations\n- Require approval from designated personnel for account creation\n- Create, enable, modify, disable, and remove accounts in accordance with policy\n- Monitor system account use and review accounts periodically\n- Notify account managers when accounts are no longer required\n- Deactivate temporary/emergency accounts after an organization-defined time period"
+        },
+        "relevance_score": 9.0,
+        "source_path": "rag\\data\\controls\\NIST-800-53-AC-2.md"
+      },
+      {
+        "excerpt": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives. This includes:\n- Identifying and authenticating users\n- Considering network segmentation\n- Managing the identification, authentication, and authorization process\n- Managing privileged access credentials and removing access when no longer authorized",
+        "framework": "SOC 2 (Trust Services Criteria)",
+        "id": "SOC 2 (Trust Services Criteria):CC6.1",
+        "metadata": {
+          "aws_config_rules": [
+            "iam-user-mfa-enabled",
+            "root-account-mfa-enabled",
+            "s3-bucket-public-read-prohibited",
+            "s3-bucket-public-write-prohibited",
+            "iam-password-policy"
+          ],
+          "control_id": "CC6.1",
+          "framework": "SOC 2 (Trust Services Criteria)",
+          "keywords": [
+            "SOC2",
+            "logical access",
+            "physical access",
+            "authentication",
+            "authorization",
+            "MFA",
+            "access controls",
+            "identity management",
+            "trust services",
+            "security principle"
+          ],
+          "summary": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives. This includes:\n- Identifying and authenticating users\n- Considering network segmentation\n- Managing the identification, authentication, and authorization process\n- Managing privileged access credentials and removing access when no longer authorized"
+        },
+        "relevance_score": 8.0,
+        "source_path": "rag\\data\\controls\\SOC2-CC6.1.md"
+      },
+      {
+        "excerpt": "Organizations must:\n- Employ the principle of least privilege for system access\n- Authorize access to security functions and security-relevant information only\n- Grant users (or processes acting on behalf of users) only the minimum privileges necessary\n- Implement least privilege for specific duties and information systems\n- Review user privileges periodically and adjust as needed",
+        "framework": "NIST 800-53 Rev 5",
+        "id": "NIST 800-53 Rev 5:AC-6",
+        "metadata": {
+          "aws_config_rules": [
+            "iam-policy-no-statements-with-admin-access",
+            "iam-user-no-policies-check",
+            "s3-bucket-public-read-prohibited",
+            "s3-bucket-public-write-prohibited"
+          ],
+          "control_id": "AC-6",
+          "framework": "NIST 800-53 Rev 5",
+          "keywords": [
+            "least privilege",
+            "permissions",
+            "IAM policies",
+            "excessive permissions",
+            "admin access",
+            "privilege escalation",
+            "overprivileged",
+            "access control",
+            "RBAC"
+          ],
+          "summary": "Organizations must:\n- Employ the principle of least privilege for system access\n- Authorize access to security functions and security-relevant information only\n- Grant users (or processes acting on behalf of users) only the minimum privileges necessary\n- Implement least privilege for specific duties and information systems\n- Review user privileges periodically and adjust as needed"
+        },
+        "relevance_score": 7.5,
+        "source_path": "rag\\data\\controls\\NIST-800-53-AC-6.md"
+      }
+    ],
+    "plan_env": "prod",
+    "plan_region": "us-west-2",
+    "plan_scope": "IAM configuration review",
+    "step_results": [
+      {
+        "error": null,
+        "findings": [
+          {
+            "annotation": "Resource AIDAYXBIXJE7W4C2DCY2R failed compliance check: iam-user-mfa-enabled",
+            "compliance_type": "NON_COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-17T12:28:43.250000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+              "source": "aws_config"
+            },
+            "resource_id": "AIDAYXBIXJE7W4C2DCY2R",
+            "resource_type": "AWS::IAM::User",
+            "rule": "iam-user-mfa-enabled",
+            "timestamp": "2026-02-17T12:28:43.250000-05:00Z"
+          },
+          {
+            "annotation": "Resource AIDAYXBIXJE7YTNWJ6EAI failed compliance check: iam-user-mfa-enabled",
+            "compliance_type": "NON_COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-17T12:28:43.250000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+              "source": "aws_config"
+            },
+            "resource_id": "AIDAYXBIXJE7YTNWJ6EAI",
+            "resource_type": "AWS::IAM::User",
+            "rule": "iam-user-mfa-enabled",
+            "timestamp": "2026-02-17T12:28:43.250000-05:00Z"
+          },
+          {
+            "annotation": "Resource AIDAYXBIXJE7ZPZ3YXJ5D failed compliance check: iam-user-mfa-enabled",
+            "compliance_type": "NON_COMPLIANT",
+            "evidence": {
+              "account_id": null,
+              "recorded_at": "2026-02-17T12:28:43.250000-05:00Z",
+              "region": "us-west-2",
+              "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-tzhya1",
+              "source": "aws_config"
+            },
+            "resource_id": "AIDAYXBIXJE7ZPZ3YXJ5D",
+            "resource_type": "AWS::IAM::User",
+            "rule": "iam-user-mfa-enabled",
+            "timestamp": "2026-02-17T12:28:43.250000-05:00Z"
+          }
+        ],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 3,
+          "rules_failed": 0,
+          "rules_succeeded": 3
+        },
+        "status": "success",
+        "tool_name": "aws_config_eval"
+      },
+      {
+        "error": null,
+        "findings": [],
+        "metadata": {
+          "category": null,
+          "citations": [
+            {
+              "excerpt": "Organizations must:\n- Establish conditions for group and role membership\n- Identify authorized users, group/role membership, and access authorizations\n- Require approval from designated personnel for account creation\n- Create, enable, modify, disable, and remove accounts in accordance with policy\n- Monitor system account use and review accounts periodically\n- Notify account managers when accounts are no longer required\n- Deactivate temporary/emergency accounts after an organization-defined time...",
+              "framework": "NIST 800-53 Rev 5",
+              "id": "NIST 800-53 Rev 5:AC-2",
+              "metadata": {
+                "aws_config_rules": [
+                  "iam-user-mfa-enabled",
+                  "iam-password-policy",
+                  "access-keys-rotated",
+                  "iam-user-no-policies-check"
+                ],
+                "control_id": "AC-2",
+                "framework": "NIST 800-53 Rev 5",
+                "keywords": [
+                  "account management",
+                  "IAM",
+                  "user accounts",
+                  "MFA",
+                  "access keys",
+                  "authentication",
+                  "identity lifecycle",
+                  "provisioning",
+                  "deprovisioning"
+                ],
+                "summary": "Organizations must:\n- Establish conditions for group and role membership\n- Identify authorized users, group/role membership, and access authorizations\n- Require approval from designated personnel for account creation\n- Create, enable, modify, disable, and remove accounts in accordance with policy\n- Monitor system account use and review accounts periodically\n- Notify account managers when accounts are no longer required\n- Deactivate temporary/emergency accounts after an organization-defined time period"
+              },
+              "relevance_score": 9.0,
+              "source_path": "rag\\data\\controls\\NIST-800-53-AC-2.md"
+            },
+            {
+              "excerpt": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives. This includes:\n- Identifying and authenticating users\n- Considering network segmentation\n- Managing the identification, authentication, and authorization process\n- Managing privileged access credentials and removing access when no longer authorized",
+              "framework": "SOC 2 (Trust Services Criteria)",
+              "id": "SOC 2 (Trust Services Criteria):CC6.1",
+              "metadata": {
+                "aws_config_rules": [
+                  "iam-user-mfa-enabled",
+                  "root-account-mfa-enabled",
+                  "s3-bucket-public-read-prohibited",
+                  "s3-bucket-public-write-prohibited",
+                  "iam-password-policy"
+                ],
+                "control_id": "CC6.1",
+                "framework": "SOC 2 (Trust Services Criteria)",
+                "keywords": [
+                  "SOC2",
+                  "logical access",
+                  "physical access",
+                  "authentication",
+                  "authorization",
+                  "MFA",
+                  "access controls",
+                  "identity management",
+                  "trust services",
+                  "security principle"
+                ],
+                "summary": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives. This includes:\n- Identifying and authenticating users\n- Considering network segmentation\n- Managing the identification, authentication, and authorization process\n- Managing privileged access credentials and removing access when no longer authorized"
+              },
+              "relevance_score": 8.0,
+              "source_path": "rag\\data\\controls\\SOC2-CC6.1.md"
+            },
+            {
+              "excerpt": "Organizations must:\n- Employ the principle of least privilege for system access\n- Authorize access to security functions and security-relevant information only\n- Grant users (or processes acting on behalf of users) only the minimum privileges necessary\n- Implement least privilege for specific duties and information systems\n- Review user privileges periodically and adjust as needed",
+              "framework": "NIST 800-53 Rev 5",
+              "id": "NIST 800-53 Rev 5:AC-6",
+              "metadata": {
+                "aws_config_rules": [
+                  "iam-policy-no-statements-with-admin-access",
+                  "iam-user-no-policies-check",
+                  "s3-bucket-public-read-prohibited",
+                  "s3-bucket-public-write-prohibited"
+                ],
+                "control_id": "AC-6",
+                "framework": "NIST 800-53 Rev 5",
+                "keywords": [
+                  "least privilege",
+                  "permissions",
+                  "IAM policies",
+                  "excessive permissions",
+                  "admin access",
+                  "privilege escalation",
+                  "overprivileged",
+                  "access control",
+                  "RBAC"
+                ],
+                "summary": "Organizations must:\n- Employ the principle of least privilege for system access\n- Authorize access to security functions and security-relevant information only\n- Grant users (or processes acting on behalf of users) only the minimum privileges necessary\n- Implement least privilege for specific duties and information systems\n- Review user privileges periodically and adjust as needed"
+              },
+              "relevance_score": 7.5,
+              "source_path": "rag\\data\\controls\\NIST-800-53-AC-6.md"
+            }
+          ],
+          "controls_retrieved": 3,
+          "framework": null,
+          "query": "IAM security best practices"
+        },
+        "status": "success",
+        "tool": "rag_retrieve"
+      }
+    ],
+    "steps_executed": 2,
+    "steps_failed": 0,
+    "steps_succeeded": 2
+  },
+  "non_compliant_count": 3,
+  "run_id": "RUN-20260217-185859-029e24f7",
+  "summary": "Compliance scan completed. Found 3 resources: 0 compliant, 3 non-compliant. Framework: General.",
+  "timestamp": "2026-02-17T18:59:09.690996Z"
+}

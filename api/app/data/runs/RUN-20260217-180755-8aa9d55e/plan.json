@@ -1,0 +1,41 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "data deletion and retention compliance scan",
+  "steps": [
+    {
+      "description": "Check data retention configurations",
+      "params": {
+        "rules": [
+          "required-retention-period",
+          "backup-retention-check",
+          "rds-retention-settings"
+        ]
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Search for data deletion policies and procedures",
+      "params": {
+        "doc_types": [
+          "policies",
+          "procedures",
+          "compliance"
+        ],
+        "query": "data deletion policy retention requirements"
+      },
+      "tool": "rag_retrieve"
+    },
+    {
+      "description": "Audit data deletion controls",
+      "params": {
+        "rules": [
+          "s3-deletion-protection",
+          "rds-deletion-protection",
+          "ebs-deletion-protection"
+        ]
+      },
+      "tool": "aws_config_eval"
+    }
+  ]
+}

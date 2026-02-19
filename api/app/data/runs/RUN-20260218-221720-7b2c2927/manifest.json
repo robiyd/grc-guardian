@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "plan.json",
+      "sha256": "1240a403c1003f3c08fac433d607bede0bfd3f953dd35330cc46fb09bb08dc6b",
+      "size_bytes": 945
+    },
+    {
+      "filename": "findings.json",
+      "sha256": "6911f0335e8a43b4ce0a88c69deadb0272c58133fc3e3914429d058019b5c1de",
+      "size_bytes": 7292
+    },
+    {
+      "filename": "findings.csv",
+      "sha256": "447d9f67349bc865e613b0207dbb4fffc5613a41d9d12b1553e0120f8dd267c9",
+      "size_bytes": 2854
+    },
+    {
+      "filename": "report.json",
+      "sha256": "347e2a402cde439042c9b625e09e2b14032a03faf1ca3b9cef053a894ea69c4a",
+      "size_bytes": 17240
+    }
+  ],
+  "metadata": {
+    "framework": "NIST-800-53",
+    "prompt": "Check prod for  encryption, IAM MFA, and CloudTrail. Map findings to NIST AC-2 and AU-2.",
+    "scope": "prod"
+  },
+  "run_id": "RUN-20260218-221720-7b2c2927",
+  "summary": {
+    "total_files": 4,
+    "total_size_bytes": 28331
+  },
+  "timestamp": "2026-02-18T22:17:34.490358Z",
+  "version": "1.0.0"
+}

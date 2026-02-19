@@ -1,0 +1,31 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "S3 bucket public access and encryption compliance check",
+  "steps": [
+    {
+      "description": "Check S3 buckets for public access blocks",
+      "params": {
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-public-access-prohibited"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Verify S3 bucket encryption settings",
+      "params": {
+        "resource_type": "AWS::S3::Bucket",
+        "rule": "s3-bucket-server-side-encryption-enabled"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Get S3 security best practices documentation",
+      "params": {
+        "doc_type": "aws_security",
+        "query": "S3 bucket security best practices encryption public access"
+      },
+      "tool": "rag_retrieve"
+    }
+  ]
+}

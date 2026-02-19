@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "plan.json",
+      "sha256": "022a0b0ca3b240d9ef708f77f90bf23acbf7de3ef493c8dff4e85a283066cce5",
+      "size_bytes": 812
+    },
+    {
+      "filename": "findings.json",
+      "sha256": "022f3b7ac63b4addf6bb40572982e4b6c26c30cf5d7c12035c2240d50574881d",
+      "size_bytes": 697
+    },
+    {
+      "filename": "findings.csv",
+      "sha256": "7c38e04b8924ffb812a0e45a4ccd7c176d6a760485ecef289b79c75c46ef6573",
+      "size_bytes": 288
+    },
+    {
+      "filename": "report.json",
+      "sha256": "bcf6095d21ce501cc2283fd1c5f76259f79be8645e857a83db4b0cf106698075",
+      "size_bytes": 14021
+    }
+  ],
+  "metadata": {
+    "framework": null,
+    "prompt": "Check IAM; DROP TABLE users; --",
+    "scope": null
+  },
+  "run_id": "RUN-20260217-185434-2c061c11",
+  "summary": {
+    "total_files": 4,
+    "total_size_bytes": 15818
+  },
+  "timestamp": "2026-02-17T18:54:42.876836Z",
+  "version": "1.0.0"
+}

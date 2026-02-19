@@ -1,0 +1,74 @@
+{
+  "compliant_count": 0,
+  "execution": {
+    "all_findings": [],
+    "citations": [],
+    "plan_env": "prod",
+    "plan_region": "us-west-2",
+    "plan_scope": "S3 security, IAM MFA, CloudTrail compliance mapped to NIST AC-2 and AU-2",
+    "step_results": [
+      {
+        "error": "s3-bucket-public-read-prohibited: Invalid parameter for rule s3-bucket-public-read-prohibited: The provided compliance type is not allowed. The valid values allowed are: [NOT_APPLICABLE, COMPLIANT, NON_COMPLIANT]. Provide a valid compliance type.; s3-bucket-public-write-prohibited: Invalid parameter for rule s3-bucket-public-write-prohibited: The provided compliance type is not allowed. The valid values allowed are: [NOT_APPLICABLE, COMPLIANT, NON_COMPLIANT]. Provide a valid compliance type.",
+        "findings": [],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 2,
+          "rules_failed": 2,
+          "rules_succeeded": 0
+        },
+        "status": "error",
+        "tool_name": "aws_config_eval"
+      },
+      {
+        "error": "s3-bucket-server-side-encryption-enabled: Invalid parameter for rule s3-bucket-server-side-encryption-enabled: The provided compliance type is not allowed. The valid values allowed are: [NOT_APPLICABLE, COMPLIANT, NON_COMPLIANT]. Provide a valid compliance type.",
+        "findings": [],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 1,
+          "rules_failed": 1,
+          "rules_succeeded": 0
+        },
+        "status": "error",
+        "tool_name": "aws_config_eval"
+      },
+      {
+        "error": "mfa-enabled-for-iam-console-access: Invalid parameter for rule mfa-enabled-for-iam-console-access: The provided compliance type is not allowed. The valid values allowed are: [NOT_APPLICABLE, COMPLIANT, NON_COMPLIANT]. Provide a valid compliance type.",
+        "findings": [],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 1,
+          "rules_failed": 1,
+          "rules_succeeded": 0
+        },
+        "status": "error",
+        "tool_name": "aws_config_eval"
+      },
+      {
+        "error": "cloudtrail-enabled: Invalid parameter for rule cloudtrail-enabled: The provided compliance type is not allowed. The valid values allowed are: [NOT_APPLICABLE, COMPLIANT, NON_COMPLIANT]. Provide a valid compliance type.; multi-region-cloudtrail-enabled: Invalid parameter for rule multi-region-cloudtrail-enabled: The provided compliance type is not allowed. The valid values allowed are: [NOT_APPLICABLE, COMPLIANT, NON_COMPLIANT]. Provide a valid compliance type.",
+        "findings": [],
+        "metadata": {
+          "region": "us-west-2",
+          "rules_evaluated": 2,
+          "rules_failed": 2,
+          "rules_succeeded": 0
+        },
+        "status": "error",
+        "tool_name": "aws_config_eval"
+      },
+      {
+        "error": "No query, framework, or category specified",
+        "findings": [],
+        "metadata": {},
+        "status": "error",
+        "tool": "rag_retrieve"
+      }
+    ],
+    "steps_executed": 5,
+    "steps_failed": 5,
+    "steps_succeeded": 0
+  },
+  "non_compliant_count": 0,
+  "run_id": "RUN-20260217-173538-04a21bc5",
+  "summary": "Compliance scan completed. Found 0 resources: 0 compliant, 0 non-compliant. Framework: NIST-800-53.",
+  "timestamp": "2026-02-17T17:36:01.989055Z"
+}

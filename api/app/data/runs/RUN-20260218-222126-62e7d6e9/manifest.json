@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "plan.json",
+      "sha256": "16deebc5bfcdbd66b967392421c8febe34987ea3a6b65b66362eb202565eb52d",
+      "size_bytes": 573
+    },
+    {
+      "filename": "findings.json",
+      "sha256": "dad51e241f7dc79fc5ac7781374539e18fd8615a042e1653b9e9a082a4e3de65",
+      "size_bytes": 8126
+    },
+    {
+      "filename": "findings.csv",
+      "sha256": "7c0de6d83844396a635fb2fa7a97f8f64e1e8a250a1c3724e2cb1f586de1d89f",
+      "size_bytes": 3283
+    },
+    {
+      "filename": "report.json",
+      "sha256": "42355090571151b1e3816e32cd3df7d993009e65f52c1f237fda5da1c7a9e465",
+      "size_bytes": 18715
+    }
+  ],
+  "metadata": {
+    "framework": "NIST-800-53",
+    "prompt": "tell me the name of the s3 bucket that is publicly accessible",
+    "scope": "prod"
+  },
+  "run_id": "RUN-20260218-222126-62e7d6e9",
+  "summary": {
+    "total_files": 4,
+    "total_size_bytes": 30697
+  },
+  "timestamp": "2026-02-18T22:21:33.752378Z",
+  "version": "1.0.0"
+}

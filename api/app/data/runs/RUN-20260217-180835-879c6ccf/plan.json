@@ -1,0 +1,47 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "data deletion compliance scan",
+  "steps": [
+    {
+      "description": "Retrieve data deletion compliance requirements",
+      "params": {
+        "context": "production environment",
+        "query": "data deletion compliance requirements"
+      },
+      "tool": "rag_retrieve"
+    },
+    {
+      "description": "Check S3 bucket deletion policies",
+      "params": {
+        "rule": "s3-bucket-deletion-protection",
+        "service": "s3"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Check RDS deletion protection",
+      "params": {
+        "rule": "rds-deletion-protection",
+        "service": "rds"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Check EBS volume deletion policies",
+      "params": {
+        "rule": "ebs-deletion-protection",
+        "service": "ec2"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Check data lifecycle policies",
+      "params": {
+        "rule": "data-lifecycle-compliance",
+        "service": "all"
+      },
+      "tool": "aws_config_eval"
+    }
+  ]
+}

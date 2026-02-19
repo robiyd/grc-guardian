@@ -1,0 +1,31 @@
+{
+  "env": "prod",
+  "region": "us-west-2",
+  "scope": "IAM configuration check",
+  "steps": [
+    {
+      "description": "Evaluate IAM policies and roles against AWS Config rules",
+      "params": {
+        "rules": [
+          "iam-root-access-key-check",
+          "iam-policy-no-statements-with-admin-access",
+          "iam-user-mfa-enabled"
+        ],
+        "service": "iam"
+      },
+      "tool": "aws_config_eval"
+    },
+    {
+      "description": "Analyze IAM best practices documentation",
+      "params": {
+        "doc_types": [
+          "aws_security",
+          "compliance_frameworks"
+        ],
+        "max_results": 5,
+        "query": "IAM security best practices"
+      },
+      "tool": "rag_retrieve"
+    }
+  ]
+}

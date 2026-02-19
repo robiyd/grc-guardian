@@ -1,0 +1,21 @@
+{
+  "findings": [
+    {
+      "annotation": "Resource 599233349951 failed compliance check: iam-password-policy",
+      "compliance_type": "NON_COMPLIANT",
+      "evidence": {
+        "account_id": null,
+        "recorded_at": "2026-02-17T10:56:47.685000-05:00Z",
+        "region": "us-west-2",
+        "rule_arn": "arn:aws:config:us-west-2:599233349951:config-rule/config-rule-sa8smy",
+        "source": "aws_config"
+      },
+      "resource_id": "599233349951",
+      "resource_type": "AWS::::Account",
+      "rule": "iam-password-policy",
+      "timestamp": "2026-02-17T10:56:47.685000-05:00Z"
+    }
+  ],
+  "run_id": "RUN-20260217-185434-2c061c11",
+  "total_findings": 1
+}
